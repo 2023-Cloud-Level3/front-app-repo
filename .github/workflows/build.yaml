@@ -18,7 +18,6 @@ jobs:
       - name: Build front
         run: |
           npm install
-          nvm install 16
           npm run build
 
       - name: Configure AWS credentials
