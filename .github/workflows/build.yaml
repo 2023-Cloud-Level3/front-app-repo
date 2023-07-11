@@ -7,15 +7,15 @@ on:
 
 jobs:
   build:
-#    runs-on: ubuntu-latest
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
+        with:
+          node-version: 16.14.2
 
       - name: Check Node v
         run: |
-          nvm install v16
           node -v
 
       - name: Build front
