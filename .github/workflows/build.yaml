@@ -15,6 +15,7 @@ jobs:
 
       - name: Check Node v
         run: |
+          nvm install v16
           node -v
 
       - name: Build front
