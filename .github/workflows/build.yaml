@@ -12,6 +12,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
+      # 이 부분 추가 했음
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
