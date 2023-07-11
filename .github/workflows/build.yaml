@@ -18,6 +18,7 @@ jobs:
 
       - name: Build front
         run: |
+          npm audit fix --force
           npm install
           npm run build
 
